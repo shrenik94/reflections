@@ -1,34 +1,36 @@
 
 1. How did viewing a diff between two versions of a file help you see the bug that was introduced?
 
-It helped me view the difference because it had the '+' and '-' symbo; which depecited that something is added and something is removed respectively and the ones which did not have either depcited that those lines were not changed in the new file.
+Ans: It helped me view the difference because it had '+' and '-' symbol which depecited either something is added or something is removed respectively and the ones which did not have them depcited that those lines were not changed in the new file.
 
 2. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
-Having older verions helps you compare things with you new file which helps you to find and mistakes you might have made in your new file or works just for comparing the contents of the file. If there are any mistakes, then you can correct them by refering to older verions which saves alot of time. Hence having older verions is very useful. 
+
+Ans: Having older verions helps you compare your new file which helps you find any mistakes you might have made in your new file or works just for comparing the contents of the file. If there are any mistakes, then you can correct them by refering to older verions which saves a lot of time. Hence having older verions is very useful. 
 
 3. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
-Manual creation:
-pros- Not too many versions are saved hence its easy to go thorugh it
-you can type in a message of what has been changed
-less cluttering
-cons: sometimes it might be too late to commit and you might have to go back and do it all over again
-sometimes people forget to commit important parts and think that it can be commited later on
-Automatic creation
-pros: No need to think about when to commit
-no loss of data
-full history available anytime
-cons: excessive clustering
-too many versions are created
-very difficult and time consuming to find a mistake
+
+Ans:
+Pros:
+- You can commit whenever you want.
+- Granularity is at committer's disposal.
+
+Cons:
+- You may forget to commit when you should do it.
+- It can be actually too late when you notice you should have made a commit.
 
 4. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
-less time is wasted
+
+Ans: Git is more programming oriented, where several files tend to consist one logical group. On the other hand, Google Docs is primarily more targeted for documents created for human readings, in which case each single file consists a meaningful piece.
 
 5. How can you use the commands git log and git diff to view the history of files?
-git log is used for giving you a list of commits made with a message depicting what was the commit
-git diff new id old id to see the differences between them
+Ans:
+- git log can be used to list the summaries of all the changes made to the repository.
+- git diff can be used to see what has actually changed between two given commits.
 
 6. How might using version control make you more confident to make changes that could break something?
 
+Ans: You can try changing any critical features, since you can always revert back to the point when those were working correctly. If you find something is not working, you can git log, and try the previous versions untill you find the one which works, and make diff of the last one that worked correctly and the commit following it. That result would show where and how the bug was introduced.
+
 7. Now that you have your workspace set up, what do you want to try using Git for?
-to store my projects
+
+Ans: Writing my own programs and deploy my projects.
